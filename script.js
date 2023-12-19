@@ -208,22 +208,7 @@ function generatePassword() {
   console.log(sampleChar);
   finalArea = gauranteedCharacters.concat(sampleChar);
   return finalArea.join("");
-  
 }
-//till password length
-//give me random getrandom
-
-// Generate a password when the button is clicked
-// Present a series of prompts for password criteria
-// Length of password
-// At least 8 characters but no more than 128.
-// Character types
-// Lowercase
-// Uppercase
-// Numeric
-// Special characters ($@%&*, etc)
-// Code should validate for each input and at least one character type should be selected
-// Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
