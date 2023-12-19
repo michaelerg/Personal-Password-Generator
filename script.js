@@ -160,12 +160,6 @@ function getRandom(arr) {
   //pass all char array in here
   //variable to hold password and its index when generate
   //
-  //for loop that loops the number of times tat matches the lenght the use chose
-  //gen random numb
-  //numb is used for index for a character in the 'mega-array'
-  //mega-array[gen index] is the characyer we pull
-  //add the character to password
-  //once the loop is finished return the password
 }
 
 // Function to generate password with user input
@@ -195,6 +189,13 @@ function generatePassword() {
     gauranteedCharacters.push(singleChar);
   }
   console.log(options.passwordLength, gauranteedCharacters.length);
+
+  //for loop that loops the number of times tat matches the lenght the use chose
+  //gen random numb
+  //numb is used for index for a character in the 'mega-array'
+  //mega-array[gen index] is the characyer we pull
+  //add the character to password
+  //once the loop is finished return the password
   for (
     let i = 0;
     i < +options.passwordLength - gauranteedCharacters.length;
