@@ -88,18 +88,10 @@ var upperCasedCharacters = [
   "Z",
 ];
 
-//const charOptions = [];
-
 //min 8 characters, but less 128 characters
 //condition that check if its in range
 //store prompt as Number, convert string to number
-//if out of range call the function again
 
-//confirm which characters will be used by the user?
-//if they choose false for all character sets then call the function again and tell them "minimum chose one character set"
-
-//you can store genpassword as string and then concat
-//concat()
 // Function to prompt user for password options
 function getPasswordOptions() {
   //prompt for password lenght
@@ -109,9 +101,10 @@ function getPasswordOptions() {
 
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Has to be within range try again");
+    //if out of range stop the generator
     return null;
   }
-
+  //confirm which characters will be used by the user?
   var hasUppercase = confirm(
     "Do you want upper case characters in your password?"
   );
@@ -128,6 +121,8 @@ function getPasswordOptions() {
     hasLowercase === false
   ) {
     alert("You need to at least choose one character set");
+
+    //if they choose false for all character sets then call the function again and tell them "minimum chose one character set"
     return null;
   }
 
